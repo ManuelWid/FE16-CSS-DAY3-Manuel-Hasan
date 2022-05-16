@@ -1,7 +1,6 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-size: small;
 }
 
 /* html, body {
@@ -20,6 +19,7 @@
     padding: 1%;
     flex-direction: column;
     overflow: hidden;
+    font-size: small;
 }
 
 .line {
@@ -102,4 +102,8 @@
     display: flex;
     justify-content: center;
     gap: 1em;
+}
+
+.smallertext {
+    font-size: .8em;
 }
