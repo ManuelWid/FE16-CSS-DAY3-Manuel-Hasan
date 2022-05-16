@@ -1,7 +1,13 @@
-html, body {
+* {
     margin: 0;
     box-sizing: border-box;
+    font-size: small;
 }
+
+/* html, body {
+    margin: 0;
+    box-sizing: border-box;
+} */
 
 .box {
     border: 1px solid black;
@@ -13,31 +19,42 @@ html, body {
     display: flex;
     padding: 1%;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .line {
     display: flex;
     align-items: flex-end;
-    border: 1px solid green;
+    border-bottom: 1px solid black;
 }
 
 .line p:first-child{
     flex-basis: 70%;
-    border: 1px solid red;
 }
 
 .line p:not(:first-child) {
     flex-basis: 15%;
     text-align: end;
-    border: 1px solid blue;
 }
 
 .linespace {
     display: flex;
+    border-bottom: 1px solid black;
 }
 
 .linespace p:first-child {
+    padding-left: 1em;
     flex-basis: 70%;
+}
+
+.linespace p:not(:first-child) {
+    flex-basis: 15%;
+    text-align: end;
+}
+
+.line-right {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .line-large {
@@ -50,4 +67,39 @@ html, body {
     background-color: black;
     height: .25em;
     width: 100%;
+}
+
+.bottomline {
+    display: flex;
+}
+
+.bottomline p {
+    flex-basis: 25%;
+}
+
+.bottomlinespace {
+    display: flex;
+}
+
+.bottomlinespace p:not(:first-child) {
+    flex-basis: 25%;
+}
+
+.bottomlinespace p:first-child {
+    flex-basis: 25%;
+    padding-left: 1em;
+}
+
+#why {
+    border-bottom: 1px solid black;
+}
+
+.flexbox > p {
+    border-top: 1px solid black;
+}
+
+.lastelement {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
 }
