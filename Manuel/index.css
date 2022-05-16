@@ -12,6 +12,7 @@
     border: 1px solid black;
     width: fit-content;
     margin: 3vw;
+    /* width: 300px; */
 }
 
 .flexbox {
@@ -71,6 +72,8 @@
 
 .bottomline {
     display: flex;
+    flex-wrap: nowrap;
+    
 }
 
 .bottomline p {
