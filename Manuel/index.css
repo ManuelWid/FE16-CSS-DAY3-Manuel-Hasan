@@ -1,0 +1,53 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px solid black;
+    width: fit-content;
+    margin: 3vw;
+}
+
+.flexbox {
+    display: flex;
+    padding: 1%;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid green;
+}
+
+.line p:first-child{
+    flex-basis: 70%;
+    border: 1px solid red;
+}
+
+.line p:not(:first-child) {
+    flex-basis: 15%;
+    text-align: end;
+    border: 1px solid blue;
+}
+
+.linespace {
+    display: flex;
+}
+
+.linespace p:first-child {
+    flex-basis: 70%;
+}
+
+.line-large {
+    background-color: black;
+    height: .5em;
+    width: 100%;
+}
+
+.line-small {
+    background-color: black;
+    height: .25em;
+    width: 100%;
+}
