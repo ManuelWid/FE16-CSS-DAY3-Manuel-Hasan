@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.facts {
+    display: flex;
+    flex-direction: column;
+}
+
+.lineBreakBig {
+    border: 8px solid black;
+}
+
+.line {
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: flex-end;
+}
+
+.line p:first-child {
+    flex-basis: 60%;
+}
+
+.line p:not(:first-child) {
+    flex-basis: 20%;
+    text-align: end;
+}
+
+.lineBreakLittle {
+    border: 3px solid black;
+}
+
+.lineSpace {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    align-items: flex-end;
+    margin-left: 1em;
+}
+
+.lineSpace p:first-child {
+    flex-basis: 60%;
+}
+
+.lineSpace p:not(:first-child) {
+    flex-basis: 20%;
+    text-align: end;
+}
+
+
+/* text part in bottom*/
+
+.line_bottom {
+    display: flex;
+}
+
+.line_bottom p:first-child {
+    flex-basis: 25%;
+}
+
+.line_bottom p:not(:first-child) {
+    flex-basis: 25%;
+}
+
+.lineSpace_bottom {
+    display: flex;
+    border: 1px solid green;
+}
+
+.lineSpace_bottom p:first-child {
+    flex-basis: 25%;
+    padding-left: 1em;
+}
+
+.lineSpace_bottom p:not(:first-child) {
+    flex-basis: 25%;
+    /* text-align: left; */
+}
+
+
+/* text part in footer*/
+
+.lineSpace_footer {
+    display: flex;
+}
+
+.line_footer {
+    display: flex;
+}
+
+
+/* .bottom {
+    display: flex;
+    align-items: flex-start;
+} */
+
+
+/* not relevant */
+
+.line * {
+    border: 1px solid red;
+}
+
+
+/* .line_bottom * {
+    border: 1px solid blue;
+} */
